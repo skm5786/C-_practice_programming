@@ -20,6 +20,7 @@
 		9523160F287AA09900DB70D1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9523160E287AA09900DB70D1 /* main.cpp */; };
 		9523161A287B2D7600DB70D1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95231619287B2D7600DB70D1 /* main.cpp */; };
 		9534DF0028D32AFB00CC5ACE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9534DEFF28D32AFB00CC5ACE /* main.cpp */; };
+		9534DF0B28D3424900CC5ACE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9534DF0A28D3424900CC5ACE /* main.cpp */; };
 		955FE87D289D2A20002C64BB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955FE87C289D2A20002C64BB /* main.cpp */; };
 		95885E66286A40D3004C0233 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95885E65286A40D3004C0233 /* main.cpp */; };
 		95885E71286AF1B5004C0233 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95885E70286AF1B5004C0233 /* main.cpp */; };
@@ -144,6 +145,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		9534DEFB28D32AFB00CC5ACE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9534DF0628D3424900CC5ACE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -289,6 +299,8 @@
 		95231619287B2D7600DB70D1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9534DEFD28D32AFB00CC5ACE /* stacks in c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "stacks in c"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9534DEFF28D32AFB00CC5ACE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9534DF0828D3424900CC5ACE /* stacks problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "stacks problems"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9534DF0A28D3424900CC5ACE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		955FE87A289D2A20002C64BB /* assignment college */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "assignment college"; sourceTree = BUILT_PRODUCTS_DIR; };
 		955FE87C289D2A20002C64BB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		95885E63286A40D3004C0233 /* exercise 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "exercise 2"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -401,6 +413,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9534DEFA28D32AFB00CC5ACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9534DF0528D3424900CC5ACE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,6 +541,7 @@
 				950CD8BB28D0CE8F00E107C3 /* deleting duplicate elements in 2d matrix */,
 				950CD8C628D2118A00E107C3 /* rational numbers */,
 				9534DEFE28D32AFB00CC5ACE /* stacks in c */,
+				9534DF0928D3424900CC5ACE /* stacks problems */,
 				9503FA0828662AA70040CB3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -554,6 +574,7 @@
 				950CD8BA28D0CE8F00E107C3 /* deleting duplicate elements in 2d matrix */,
 				950CD8C528D2118A00E107C3 /* rational numbers */,
 				9534DEFD28D32AFB00CC5ACE /* stacks in c */,
+				9534DF0828D3424900CC5ACE /* stacks problems */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -660,6 +681,14 @@
 				9534DEFF28D32AFB00CC5ACE /* main.cpp */,
 			);
 			path = "stacks in c";
+			sourceTree = "<group>";
+		};
+		9534DF0928D3424900CC5ACE /* stacks problems */ = {
+			isa = PBXGroup;
+			children = (
+				9534DF0A28D3424900CC5ACE /* main.cpp */,
+			);
+			path = "stacks problems";
 			sourceTree = "<group>";
 		};
 		955FE87B289D2A20002C64BB /* assignment college */ = {
@@ -982,6 +1011,23 @@
 			productReference = 9534DEFD28D32AFB00CC5ACE /* stacks in c */;
 			productType = "com.apple.product-type.tool";
 		};
+		9534DF0728D3424900CC5ACE /* stacks problems */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9534DF0E28D3424900CC5ACE /* Build configuration list for PBXNativeTarget "stacks problems" */;
+			buildPhases = (
+				9534DF0428D3424900CC5ACE /* Sources */,
+				9534DF0528D3424900CC5ACE /* Frameworks */,
+				9534DF0628D3424900CC5ACE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "stacks problems";
+			productName = "stacks problems";
+			productReference = 9534DF0828D3424900CC5ACE /* stacks problems */;
+			productType = "com.apple.product-type.tool";
+		};
 		955FE879289D2A20002C64BB /* assignment college */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 955FE880289D2A20002C64BB /* Build configuration list for PBXNativeTarget "assignment college" */;
@@ -1234,6 +1280,9 @@
 					9534DEFC28D32AFB00CC5ACE = {
 						CreatedOnToolsVersion = 14.0;
 					};
+					9534DF0728D3424900CC5ACE = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					955FE879289D2A20002C64BB = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -1310,6 +1359,7 @@
 				950CD8B928D0CE8F00E107C3 /* deleting duplicate elements in 2d matrix */,
 				950CD8C428D2118A00E107C3 /* rational numbers */,
 				9534DEFC28D32AFB00CC5ACE /* stacks in c */,
+				9534DF0728D3424900CC5ACE /* stacks problems */,
 			);
 		};
 /* End PBXProject section */
@@ -1416,6 +1466,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9534DF0028D32AFB00CC5ACE /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9534DF0428D3424900CC5ACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9534DF0B28D3424900CC5ACE /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1891,6 +1949,24 @@
 			};
 			name = Release;
 		};
+		9534DF0C28D3424900CC5ACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9534DF0D28D3424900CC5ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		955FE87E289D2A20002C64BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2256,6 +2332,15 @@
 			buildConfigurations = (
 				9534DF0128D32AFB00CC5ACE /* Debug */,
 				9534DF0228D32AFB00CC5ACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9534DF0E28D3424900CC5ACE /* Build configuration list for PBXNativeTarget "stacks problems" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9534DF0C28D3424900CC5ACE /* Debug */,
+				9534DF0D28D3424900CC5ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

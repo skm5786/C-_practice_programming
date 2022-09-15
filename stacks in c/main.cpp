@@ -14,7 +14,7 @@ public:
     }
     int pop(stacks *s){
         if (empty(s)) {
-            cout<<"stack is empty"<<endl;
+            cout<<"stack is underflowed"<<endl;
             exit(1);
         }
             s->top--;
