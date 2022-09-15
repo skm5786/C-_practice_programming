@@ -1,14 +1,7 @@
-//
-//  main.cpp
-//  C++ programming
-//
-//  Created by sumit thakral on 24/06/22.
-//
-
-#include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+#include<iostream>
+using namespace std;
+int main(){
+    int sum = 6;
+    cout<< "Hello world\n"<<sum<<"\n";
     return 0;
 }
