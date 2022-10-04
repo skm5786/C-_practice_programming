@@ -89,6 +89,9 @@ float oper(int symb,float op1,float op2){
     }
 }
 int main(){
-    cout<<eval("23^")<<endl;
+  char expr[20];
+    cout<<"enter postfix expression: ";
+    cin>>expr;
+    cout<<"value of expression: "<<eval(expr)<<endl;
     return 0;
 }

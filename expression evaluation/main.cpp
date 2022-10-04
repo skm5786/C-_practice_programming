@@ -88,7 +88,66 @@ float oper(int symb,float op1,float op2){
             exit(1);
     }
 }
+int prec(char c)
+{
+    if (c == '^')
+        return 3;
+    else if (c == '/' || c == '*')
+        return 2;
+    else if (c == '+' || c == '-')
+        return 1;
+    else
+        return -1;
+}
+string infixToPostfix(string s)
+{
+ 
+    stacks<char> st;
+    string result;
+ 
+    for (int i = 0; i < s.length(); i++) {
+        char c = s[i];
+        if ((c >= '0' && c <= '9'))
+            result += c;
+        else if (c == '(')
+            st.push('(');
+        else if (c == ')') {
+            while (st.stacktop() != '(') {
+                result += st.stacktop();
+                st.pop();
+            }
+            st.pop();
+        }
+        else {
+            while (!st.empty()
+                   && prec(c) <= prec(st.stacktop())) {
+                if (c == '^' && st.stacktop() != '^')
+                    break;
+                else {
+                    result += st.stacktop();
+                    st.pop();
+                }
+            }
+            st.push(c);
+        }
+    }
+    while (!st.empty()) {
+        result += st.stacktop();
+        st.pop();
+    }
+ 
+    return result;
+}
 int main(){
-    cout<<eval("23^")<<endl;
-    return 0;
+    string expr;
+
+    cout<<"enter your expression: ";
+    cin>>expr;
+    expr=infixToPostfix(expr);
+
+    int n = expr.length();
+    char char_array[n + 1];
+    strcpy(char_array, expr.c_str());
+
+    cout<<"value of algebric expression: "<<eval(char_array)<<endl;
 }
